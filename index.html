@@ -24,31 +24,70 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu de opciones</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                noticia relevante
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">buho 1</a></li>
+                <li><a class="dropdown-item" href="#">buho 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">buho 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">No disponible</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar noticia</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="menu-cabecera"><img src="imagenes/caosnews.jpg" class="rounded float-start" alt="..." width="100px" height="100px"><p>
     noticias de ultimos minutos, no se lo pierdan
-    </p></div>
+    </div>
+    
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card" >
-                <img src="imagenes/buho1.jpg" class="card-img-top" alt="..."width=750px height="900px">
+                <img src="imagenes/buho1.jpg" class="card-img-top" alt="..."width=500px height="750px">
                 <div class="card-body">
-                  <p class="card-text">el buho maspicao a shoro que te podi encontrar</p>
+                  <p class="card-text">el buho , esto seria la noticia numero 1</p>
                 </div>
               </div>
           </div>
           <div class="carousel-item">
             <div class="card" >
-                <img src="imagenes/buho 2.jpg" class="card-img-top" alt="..."width=750px height="900px">
+                <img src="imagenes/buho 2.jpg" class="card-img-top" alt="..."width=500px height="750px">
                 <div class="card-body">
-                  <p class="card-text">el buho entero shoro muy shoro que te podi encontrar</p>
+                  <p class="card-text">el buho de hp, la noticia numero 2</p>
                 </div>
               </div>
             
           </div>
           <div class="carousel-item">
-            <img src="imagenes/buho3.jpg" class="d-block w-100" alt="buho come cosas entero picao a shoro" width=750px height="900px">
-            buho bonito numero 3
+            <img src="imagenes/buho3.jpg" class="d-block w-100" alt="buho come cosas entero picao a shoro" width=500px height="750px">
+            <div class="card-body">
+              <p class="card-text">el utlimo buhito de prueba, la noticia numero 3</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
